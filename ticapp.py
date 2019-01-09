@@ -16,7 +16,7 @@ def index():
     if hlp.validate_board(board):
         winner = hlp.check_winning_player(board)
         if winner == 'x' or winner == 'o' or winner == 'tie' :
-            return winner
+            return winner + ' wins'
         else:
             return hlp.get_computers_play(board, 'o')
 
